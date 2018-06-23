@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--<link rel="stylesheet" href="assets/style.css">-->
+    
+    <title>Visualization - Weather Analysis</title>
+</head>
+<body style="background-color: gainsboro">
+        
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                        <a class="navbar-brand logo" href="index.html" style="background-color: slateblue; color:white;">
+                                <span class =  "nav-color"> Latitude</span></a>
+                </div>
+    
+                <div class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="temperature.html">Max Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="wind_speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html"> Comparison</a></li>
+                    <li><a href="data.html"> Data</a></li>                                           
+                </div>
+            </div>      
+        </nav>
+
+<style>                    
+                                        
+        p {
+          text-align: justify;
+          letter-spacing: 3px;
+              }
+        img {
+          float: center;
+      }
+                          
+      </style>
+      
+      <!-- Creates the Overall Grid -->
+          
+          <div class="container">
+              <div class="row">
+               <div class="col-md-8">  
+                   <div class="panel panel-default">
+                      <div class="panel-body">
+                      <h2 style="color:slateblue; text-align:center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Wind Speed vs. Latitude</h2>
+                      <hr>
+                      <img class="first image" src="WindSpeed.png" alt="wind speed" >
+                      <br>  <br>  
+                      <p class = "text">It seems that wind speed has a weak correlation with the distance from the equator line. 
+                          The datapoints are very scattered across the final plot. In other words, the speed of the wind has not an observable correlation,
+                        in this analysis, with a city location.</p>
+                          <br>   
+                        
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="panel panel-default">
+                              <div class="panel-body">                                    
+                                  <h2 style="color:slateblue; text-align:center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Visualizations</h2>
+                                  <hr>
+      
+                                  <div class="row" >
+                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="Temperature.png" style="width:100%" alt="temperature"></a></div>
+                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="Humidity.png" style="width:100%" alt="humidity"></a></div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="Cloudiness.png" style="width:100%" alt="cloudiness"></a></div>
+                                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind_speed.html"><img class = "img img-responsive" src="WindSpeed.png" style="width:100%" alt="WindSpeed"></a></div>
+                                  </div>
+                                      
+                              </div>
+                      </div>     
+                  </div>    
+          </div>
+      </body>
+      </html>
+                 

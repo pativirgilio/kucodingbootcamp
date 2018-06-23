@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO Sighting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      table {
+          width:100%;
+      }
+      table, th, td {
+          border: 1px solid rgb(168, 84, 11);
+          border-collapse: collapse;
+      }
+      
+      th, td {
+          padding: 5px;
+          text-align: center;
+      }
+      table tr:nth-child(even) {
+          background-color: lightgray;
+      }
+      table tr:nth-child(odd) {
+         background-color: #fff;
+      }
+      table th {
+          background-color: rgb(197, 195, 195);
+          color: black;
+      }
+      h1 {color: goldenrod;
+        font-family: cursive;
+        font-weight: bold;
+      }    
+      body {
+        background-image: url(Images/ufo-hd2.jpg);
+        background-position: center;
+        background-color: gainsboro;
+        background-attachment: fixed;
+      }
+  </style>
+    
+</head>
+
+<body>
+  
+      <div class="container">
+          <h1 style="text-align: left">UFO Dataset</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+
+                        <input type="datetime" class="form-control" id="datetime" placeholder="Date (mm/dd/yyyy)">
+                        <a id="search" class="btn btn-default">Search</a>
+                        <input type="text" class="form-control" id="state" placeholder="State">
+                        <a id="search1" class="btn btn-default">Search</a>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                        <a id="search2" class="btn btn-default">Search</a>
+                        <input type="text" class="form-control" id="country" placeholder="Country">
+                        <a id="search3" class="btn btn-default">Search</a>
+                        <input type="text" class="form-control" id="shape" placeholder="Shape">
+                        <a id="search4" class="btn btn-default">Search</a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+                    </div>
+                </div>
+            </div>
+  
+            <div class="row">
+                <div class="col-md-12">
+                        <table class="table table-bordered table-hover table-condensed table-responsive"> 
+                            <thead>
+                              <tr>
+                                 <th>Date/time</th>
+                                 <th>City</th>
+                                 <th>State</th>
+                                 <th>Country</th>
+                                 <th>Shape</th>
+                                 <th>Duration in Minutes </th>
+                                 <th>Comments</th>
+                              </tr>
+                            </thead>
+                   
+                        <tbody>
+                        </tbody>
+          
+                        </table>
+              
+                    </div>
+                </div>
+
+<script src="data.js" type="text/javascript"></script>
+<script src="index.js" type="text/javascript"></script>
+      
+</body>
+</html>
