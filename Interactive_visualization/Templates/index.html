@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <style>
+            h1 {
+                letter-spacing: 3px;
+                color:darkviolet;
+                text-decoration-style: wavy;
+                }
+                
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belly Button Biodiversity </title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+</head>
+<body>
+
+    
+        <div class="row">
+                <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="jumbotron">
+                            <div class="container">       
+                            <h1>Belly Button Biodiversity</h1>        
+                        </div>       
+                    </div>       
+                </div>
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-md-1"></div> 
+                <div class="col-md-3"> 
+                    <div class="panel panel-primary"> 
+                        <div class="panel-heading"> 
+                            <h3 class="panel-title">Selected Sample</h3> 
+                        </div> 
+                    <div class="panel-body"> 
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select> 
+                    
+                    </div> 
+                     
+                </div> 
+            </div>        
+        </div>            
+    </div> 
+<script src="index.js" type="text/javascript"></script>   
+</body>
+</html>
